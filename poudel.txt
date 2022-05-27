@@ -1,0 +1,1 @@
+git clonecloning/getting your existing remote repository to you localgit pullget/download the latest chages from the remote branchgit fetchfetch down all the branches from remote repositorygit branchlist all the branches from your local repository. A '*' will appear next to the current active branchgit branch <branch name>Creates new branchgit checkout 
