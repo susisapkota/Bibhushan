@@ -1,0 +1,189 @@
+Java Assignment Komal July 20 Abstract Class
+
+Question
+Do the following:
+1. Create a abstract class AbstractAnimal
+2. Create a abstract method which might changes based on different animal. It might be sound, structure, speed, habitat
+3. Create a non abstract method if it doesn't change respect to the child class.It might be reproduce, breath
+4. Create a class Tiger, Human, Dog
+5. Create a test class to test your code where you create object for each of the class to be tested.
+
+Solution:
+
+
+package AbstractAnimal;
+
+package AbstractAnimal;
+
+public abstract class Animal {
+	
+	public abstract void sound();
+	public abstract void structure();
+	public abstract void speed();
+	public abstract void habitat();
+	
+
+	public final void reproduce() {
+	 	System.out.println("Animal reproduce");
+	}
+	
+	public final void breathe() {
+	 	System.out.println("Animal breathe");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+}
+********************
+package AbstractAnimal;
+
+public class Tiger extends Animal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void sound() {
+		System.out.println("Tiger roars");
+		
+	}
+
+	@Override
+	public void structure() {
+		System.out.println("Tiger -- Structure");
+		
+	}
+
+	@Override
+	public void speed() {
+		System.out.println("Tiger high speed");
+		
+	}
+
+	@Override
+	public void habitat() {
+		System.out.println("Tiger lives in jungle");
+		
+	}
+
+}
+
+********************
+package AbstractAnimal;
+
+public class Human extends Animal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void sound() {
+		System.out.println("Human speak");
+		
+	}
+
+	@Override
+	public void structure() {
+		System.out.println("Human structure");
+		
+	}
+
+	@Override
+	public void speed() {
+		System.out.println("Human walk");
+		
+	}
+
+	@Override
+	public void habitat() {
+		System.out.println("Human live in house");
+		
+	}
+
+}
+*******************
+
+package AbstractAnimal;
+
+public class Dog extends Animal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void sound() {
+		System.out.println("Dog barks");
+		
+	}
+
+	@Override
+	public void structure() {
+		System.out.println("Dog is four legged animal.");
+		
+	}
+
+	@Override
+	public void speed() {
+		System.out.println("Dog runs");
+		
+	}
+
+	@Override
+	public void habitat() {
+		System.out.println("Dog is a pet.");
+		
+	}
+
+}
+**************
+
+package AbstractAnimal;
+
+public class AnimalTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Tiger t1 = new Tiger();
+		t1.sound();
+		t1.structure();
+		t1.speed();
+		t1.habitat();
+		t1.reproduce();
+		t1.breathe();
+		
+		Human h1 = new Human();
+		h1.sound();
+		h1.structure();
+		h1.speed();
+		h1.habitat();
+		h1.reproduce();
+		h1.breathe();
+		
+		Dog d1 = new Dog();
+		d1.sound();
+		d1.structure();
+		d1.speed();
+		d1.habitat();
+		d1.reproduce();
+		d1.breathe();
+		
+		
+	}
+
+}
+
+
+
